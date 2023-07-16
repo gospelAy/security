@@ -27,6 +27,7 @@ public class AdminController {
     }
     @PutMapping
     @PreAuthorize("hasAuthority('admin:update')")
+
     @Hidden
     public String put() {
         return "PUT:: admin controller";
